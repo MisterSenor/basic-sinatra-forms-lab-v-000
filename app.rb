@@ -8,8 +8,8 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    puts params
-    
+    params
+
     erb :team
   end
 
