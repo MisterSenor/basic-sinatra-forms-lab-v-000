@@ -8,7 +8,8 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    puts params
+    @params
+    #Now you need to use an instance variable to pass data between this method and its view file
     erb :team
   end
 
